@@ -158,6 +158,5 @@ free upgrade.
 
 
 
-## License
 
-MIT
+
