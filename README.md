@@ -526,67 +526,9 @@ It includes:
                               │
                               ▼
                      Customer Retention
-```
+
 
 ---
-
-# 📁 🔟 Repository Structure
-
-```text
-bank-customer-churn-prediction/
-│
-├── README.md
-│
-├── customer_churn_pipeline.ipynb
-│
-├── Bank_Management_Presentation_Updated.pptx
-│
-├── sql/
-│   └── (database scripts — schema, keys, AML & analytical queries)
-│
-├── orange/
-│   └── churn_prediction_workflow.ows
-│
-├── powerbi/
-│   └── Bank_Churn_Dashboard.pbix
-│
-└── assets/
-    ├── eda_distributions.png
-    ├── eda_correlations.png
-    ├── erd_diagram.png
-    └── powerbi_dashboard_cover.png
-```
-
----
-
-# ⚠️ 1️⃣1️⃣ Limitations
-
-The project has several limitations:
-
-* The dataset represents a single time period.
-* Customer behavior may change over time.
-* Competitor activity is not included.
-* Macroeconomic factors are not included.
-* Customer lifetime value was not incorporated into the optimization objective.
-* Recall was prioritized for model tuning because of the retention use case.
-
----
-
-# 🚀 1️⃣2️⃣ Future Improvements
-
-Potential future improvements include:
-
-* Time-based churn modeling.
-* Customer Lifetime Value integration.
-* Cost-sensitive learning.
-* Probability calibration.
-* Threshold optimization based on retention campaign cost.
-* SHAP-based model explainability.
-* Automated model retraining.
-* Deployment through an API.
-* Real-time churn monitoring.
-* Integration with CRM systems.
-* Automated Power BI refresh.
 
 ---
 
@@ -606,30 +548,6 @@ Potential future improvements include:
 | Development           | Google Colab / Jupyter Notebook |
 
 ---
-
-# ▶️ 1️⃣4️⃣ How to Run
-
-Install the required Python libraries:
-
-```bash
-pip install pandas numpy scikit-learn xgboost lightgbm imbalanced-learn matplotlib seaborn
-```
-
-Then open:
-
-```text
-customer_churn_pipeline.ipynb
-```
-
-using **Google Colab** or **Jupyter Notebook**.
-
-Update the dataset path inside the notebook if necessary:
-
-```python
-/content/drive/MyDrive/BankChurners_data.csv
-```
-
-Then run the notebook from top to bottom.
 
 To explore the other components:
 
