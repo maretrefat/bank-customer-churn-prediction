@@ -434,7 +434,7 @@ Primary keys are underlined in solid green, foreign keys in dashed red, and rela
 
 ## 🧠 Orange Data Mining
 
-A parallel data-mining workflow (`churn_prediction_workflow.ows`) was developed using **Orange**, covering data preparation, exploration, and model comparison in a visual, no-code pipeline.
+A parallel data-mining workflow ([`churn_prediction_workflow.ows`](orange/churn_prediction_workflow.ows)) was developed using **Orange**, covering data preparation, exploration, and model comparison in a visual, no-code pipeline.
 
 ### Workflow Structure
 
@@ -484,7 +484,7 @@ This finding is consistent with the Python analysis, where transaction behavior 
 
 ## 📊 Power BI
 
-The Power BI dashboard (`Bank_Churn_Dashboard.pbix`) provides an interactive business view of customer churn.
+The Power BI dashboard ([`Bank_Churn_Dashboard.pbix`](powerbi/Bank_Churn_Dashboard.pbix)) provides an interactive business view of customer churn.
 
 It includes:
 
@@ -501,7 +501,7 @@ It includes:
 
 ![Power BI — Bank Customer Churn Analysis Dashboard](assets/powerbi_dashboard_cover.png)
 
-> Open `powerbi/Bank_Churn_Dashboard.pbix` in Power BI Desktop to explore the interactive report and slicers.
+> Open [`powerbi/Bank_Churn_Dashboard.pbix`](powerbi/Bank_Churn_Dashboard.pbix) in Power BI Desktop to explore the interactive report and slicers.
 
 ---
 
@@ -526,9 +526,62 @@ It includes:
                               │
                               ▼
                      Customer Retention
-
+```
 
 ---
+
+# 📁 🔟 Repository Structure
+
+```text
+bank-customer-churn-prediction/
+│
+├── README.md
+│
+├── customer_churn_pipeline.ipynb
+││
+├── orange/
+│   └── churn_prediction_workflow.ows
+│
+├── powerbi/
+│   └── Bank_Churn_Dashboard.pbix
+│
+└── assets/
+    ├── eda_distributions.png
+    ├── eda_correlations.png
+    ├── erd_diagram.png
+    └── powerbi_dashboard_cover.png
+```
+
+---
+
+# ⚠️ 1️⃣1️⃣ Limitations
+
+The project has several limitations:
+
+* The dataset represents a single time period.
+* Customer behavior may change over time.
+* Competitor activity is not included.
+* Macroeconomic factors are not included.
+* Customer lifetime value was not incorporated into the optimization objective.
+* Recall was prioritized for model tuning because of the retention use case.
+
+---
+
+# 🚀 1️⃣2️⃣ Future Improvements
+
+Potential future improvements include:
+
+* Time-based churn modeling.
+* Customer Lifetime Value integration.
+* Cost-sensitive learning.
+* Probability calibration.
+* Threshold optimization based on retention campaign cost.
+* SHAP-based model explainability.
+* Automated model retraining.
+* Deployment through an API.
+* Real-time churn monitoring.
+* Integration with CRM systems.
+* Automated Power BI refresh.
 
 ---
 
@@ -549,10 +602,13 @@ It includes:
 
 ---
 
+
+Then run the notebook from top to bottom.
+
 To explore the other components:
 
-* Open `orange/churn_prediction_workflow.ows` in **Orange Data Mining**.
-* Open `powerbi/Bank_Churn_Dashboard.pbix` in **Power BI Desktop**.
+* Open [`orange/churn_prediction_workflow.ows`](orange/churn_prediction_workflow.ows) in **Orange Data Mining**.
+* Open [`powerbi/Bank_Churn_Dashboard.pbix`](powerbi/Bank_Churn_Dashboard.pbix) in **Power BI Desktop**.
 
 ---
 
